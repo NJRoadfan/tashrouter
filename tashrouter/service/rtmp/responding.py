@@ -85,6 +85,8 @@ class RtmpRespondingService(Service, RtmpService):
         
         # resolve the given tuples with the current RoutingTable
         for extended_network, network_min, network_max, distance in tuples:
+          # if the entry has a sender network that doesn't match this port's network range, discard it
+          if sender_network < rx_port.network_min or sender_network > rx_port.network_max: continue
           # if the entry is too many hops away or is a notify-neighbor entry, mark any entry we have as bad
           if distance >= 15:
             router.routing_table.mark_bad(network_min, network_max)
