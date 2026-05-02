@@ -4,7 +4,7 @@
 
 ### What is it?
 
-TashRouter is a fully standards-compliant AppleTalk router that supports LocalTalk (via [LToUDP](https://windswept.home.blog/2019/12/10/localtalk-over-udp/) and/or [TashTalk](https://github.com/lampmerchant/tashtalk)) in addition to EtherTalk.
+TashRouter is a fully standards-compliant AppleTalk router that supports LocalTalk (via [LToUDP](https://web.archive.org/web/20260102054321/https://windswept.home.blog/2019/12/10/localtalk-over-udp/) and/or [TashTalk](https://github.com/lampmerchant/tashtalk)) in addition to EtherTalk.
 
 ### What can it do?
 
